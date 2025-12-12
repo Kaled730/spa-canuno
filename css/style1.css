@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+.hidden { display: none; }
+
+nav {
+    margin: 10px 0;
+}
+
+nav button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.division {
+    display: flex; 
+    justify-content: center;
+}
+section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #0077B6;
+    border-radius: 10px;
+    width: 50vh;
+}
+
+form input, form select, form button {
+    display: block;
+    margin: 8px 0;
+    padding: 6px;
+}
+
+#catalogo div, #carritoItems div {
+    border: 1px solid #0077B6;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {width: 100%;;
+        font-size: auto;
+        border-radius: 10px;
+        background-color: #0077B6;
+        color: white;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    

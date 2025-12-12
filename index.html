@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA PARA PERROS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="caja caja2"><img src="img/titulo.png" alt=""></div>
+        <div class="caja caja3"><a href="iniciosesion.html"><button>INICIAR SESION</button></a></div>
+    </header>
+    <div class="reserva">
+        <div class="ajustes">
+            <div class="letra">
+            <div><h1 style="margin: 15px;">¿¿Quieres un registro rapido??</h1></div>
+            <div><a href="#reserva"><button class="boton-reserva">CLICK AQUI</button></a></div>
+        </div>
+        </div>
+        <div class="perrito"></div>
+    </div>
+    <h1 class="servicios">SERVICIOS</h1>
+    <div class="serv">
+        <div class="ajuste">
+        <div class="gato">
+            <h1 class="h1">GATOS</h1>
+            <div class="serv1">
+                <div class="gatos3"><img src="img/gato.png" alt=""  class="imgatos"></div>
+                <div class="lista">
+                    <ul>
+                        <li>Baño profundo</li>
+                        <li>Corte</li>
+                        <li>Secado completo</li>
+                        <li>Corte de uñas</li>
+                        <li>Limpieza de oidos</li>
+                        <li>Limpieza superficial de dientes</li>
+                        <li>Perfumado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="ajuste">
+        <div class="perro">
+            <h1 class="h1">PERRO</h1>
+        <div class="serv1">
+                <div class="gatos3"><img src="img/perro2.png" alt=""  class="imgatos"></div>
+                <div class="lista">
+                    <ul>
+                        <li>Baño profundo</li>
+                        <li>Corte</li>
+                        <li>Secado completo</li>
+                        <li>Corte de uñas</li>
+                        <li>Limpieza de oidos</li>
+                        <li>Limpieza superficial de dientes</li>
+                        <li>Perfumado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <h1 class="servicios">PRECIOS</h1>
+    <div class="serv">
+        <div class="ajuste">
+        <div class="gato">
+            <h1 class="h1">PARA GATOS</h1>
+            <div class="serv1">
+                <div class="gatos3"><img src="img/pelu1.jpg" alt=""  class="imgatos"></div>
+                <div class="lista">
+                    <ul>
+                        <li>Rza. Mini 50Bs</li>
+                        <li>Rza. Pequeña 70Bs</li>
+                        <li>Rza. Mediana 90Bs</li>
+                        <li>Rza. Grande 140bs</li>
+                        <li>Rza. Gigante 160Bs</li>
+                        <li>Gato 100BS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="ajuste">
+        <div class="perro">
+            <h1 class="h1">PARA PERROS</h1>
+        <div class="serv1">
+                <div class="gatos3"><img src="img/pelu2.jpg" alt=""  class="imgatos"></div>
+                <div class="lista">
+                    <ul>
+                        <li>Rza. Mini 50Bs</li>
+                        <li>Rza. Pequeña 70Bs</li>
+                        <li>Rza. Mediana 90Bs</li>
+                        <li>Rza. Grande 140bs</li>
+                        <li>Rza. Gigante 160Bs</li>
+                        <li>Perro 100Bs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <h1 class="servicios">OTROS SERVICIOS</h1>
+    <div class="serv">
+        <div class="ajuste">
+        <div class="gato">
+            <h1 class="h1">TRATAMIENTO VIP</h1>
+            <div class="serv1">
+                <div class="gatos3"><img src="img/cuidado.jpg" alt=""  class="imgatos"></div>
+                <div class="lista">
+                    <ul>
+                        <li>Baño con shampoo</li>
+                        <li>Masaje capilar</li>
+                        <li>Mascarilla para pelaje</li>
+                        <li>sesion de fotos</li>
+                        <li>Revision medica</li>
+                        <li>Collar Gratis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="ajuste">
+        <div class="perro">
+            <h1 class="h1">TRANSPORTE CANUNO</h1>
+        <div class="serv1">
+                <div class="gatos3"><img src="img/auto.jpg" alt=""  class="imgatos"></div>
+                <div class="lista">
+                    <ul>
+                        <p>recomendaciones</p>
+                        <li>CORREA</li>
+                        <li>Agenda 24 horas de anticipacion</li>
+                        <li>Flexibidad con horarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<div style="background-color: rgb(243, 243, 243); ">
+    <h1 class="servicios" id="reserva">RESERVA FURIOSA</h1>
+    <form id="formulario">
+    <div>
+        <!-- PARTE 1: Departamento y Servicio -->
+        <div class="form-section" >
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento" required>
+                <option value="">Selecciona un departamento</option>
+                <option value="baño">La Paz</option>
+                <option value="corte">Cochabamba</option>
+                <option value="spa">Santa Cruz</option>
+            </select>
+
+            <label for="servicio">Servicio:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">Seleciona un servicio</option>
+                <option value="básico">Básico</option>
+                <option value="premium">Premium</option>
+            </select>
+        </div>
+
+        <!-- PARTE 2: Fecha y hora -->
+        <div class="form-section">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+        </div>
+
+        <!-- PARTE 3: Información adicional -->
+        <div class="form-section">
+            <label for="info">Información adicional de la mascota:</label>
+            <textarea id="info" name="info" rows="4" placeholder="Escribe aquí cualquier detalle..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer>Contactanos :+591 65948256</footer> 
+</div>
+<footer style="background-color: rgb(17, 32, 53); color: white; text-align: center; padding: 10px 0;">
+    <div>SIGUENOS EN FACEBOOK</div>
+    <hr>
+    <div><p>Copyright © 2025 PetkorpSpa</p></div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

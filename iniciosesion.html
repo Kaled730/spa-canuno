@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Gestión de Mascotas</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body style="display: flex; justify-content: center;">
+<section id="login">
+    <p>Usuario:Estudiante  Contraseña:5468</p>
+    <h1 style="text-align: center;">Iniciar Sesión</h1>
+    <div style="display: flex; justify-content: center;">
+    <form id="formLogin" style=" font-size: 18px;">
+        <label for="usuario">Usuario:</label>
+        <input style="width: 40vh; height: 25px; border-radius: 25px;" type="text" id="usuario" required >
+        <label for="password">Contraseña:</label>
+        <input style="width: 40vh; height: 25px; border-radius: 25px;" type="password" id="password" required>
+        <button class="button" style="height: 35px;" type="submit">Ingresar</button>
+    </form>
+    </div>
+    </div>
+</section>
+<nav id="navbar" class="hidden" style="margin: 100px;">
+    <button onclick="mostrarModulo('registro')">Registro</button>
+    <button onclick="mostrarModulo('agenda')">Agenda</button>
+    <button onclick="mostrarModulo('carrito')">Carrito</button>
+    <button onclick="cerrarSesion()">Cerrar Sesión</button>
+</nav>
+
+<section id="registro" class="modulo hidden" >
+    <h1>Registro de Dueños y Mascotas</h1>
+    <div class="registro-dueno">
+        <h2>Dueño</h2>
+        <form id="formDueno">
+            <label>Nombre:</label>
+            <input type="text" id="nombreDueno" required>
+            <label>Teléfono:</label>
+            <input type="text" id="telefonoDueno" required>
+            <label>Correo:</label>
+            <input type="email" id="correoDueno" required>
+            <button type="submit">Registrar Dueño</button>
+        </form>
+    </div>
+
+    <div class="registro-mascota">
+        <h2>Mascota</h2>
+        <form id="formMascota">
+            <label>Nombre:</label>
+            <input type="text" id="nombreMascota" required>
+            <label>Especie:</label>
+            <input type="text" id="especieMascota" required>
+            <label>Raza:</label>
+            <input type="text" id="razaMascota" required>
+            <button type="submit">Registrar Mascota</button>
+        </form>
+    </div>
+</section>
+
+<section id="agenda" class="modulo hidden">
+    <h1>Agendar Servicio</h1>
+    <form id="formAgenda">
+        <label>Fecha:</label>
+        <input type="date" id="fechaServicio" required>
+        <label>Hora:</label>
+        <input type="time" id="horaServicio" required>
+        <label>Mascota:</label>
+        <select id="selectMascota" required>
+            <option value="">Tipo de mascota</option>
+            <option value="">Pequeno</option>
+            <option value="">Mediano</option>
+            <option value="">Grande</option>
+            <option value="">Gigante</option>
+        </select>
+        <label>Servicio:</label>
+        <select id="selectServicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option value="Baño">Baño</option>
+            <option value="Corte">Corte</option>
+            <option value="Spa">Spa</option>
+        </select>
+        <button type="submit">Agendar</button>
+    </form>
+    <div id="listaAgenda"></div>
+</section>
+
+<section id="carrito" class="modulo hidden">
+    <h1>Catálogo</h1>
+    <div id="catalogo"></div>
+    <h2>Carrito</h2>
+    <div id="carritoItems"></div>
+    <div id="totalCarrito">Total: Bs 0</div>
+</section>
+
+<script src="js/app1.js"></script>
+</body>
+</html>
